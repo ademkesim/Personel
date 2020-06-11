@@ -3,3 +3,8 @@ C:\Users\user\source\repos\Per01\DataAccess\bin\Debug\netstandard2.0\DataAccess.
 C:\Users\user\source\repos\Per01\DataAccess\obj\Debug\netstandard2.0\DataAccess.csprojAssemblyReference.cache
 C:\Users\user\source\repos\Per01\DataAccess\obj\Debug\netstandard2.0\DataAccess.AssemblyInfoInputs.cache
 C:\Users\user\source\repos\Per01\DataAccess\obj\Debug\netstandard2.0\DataAccess.AssemblyInfo.cs
+C:\Users\user\Source\Repos\Personel\DataAccess\bin\Debug\netstandard2.0\DataAccess.deps.json
+C:\Users\user\Source\Repos\Personel\DataAccess\bin\Debug\netstandard2.0\DataAccess.dll
+C:\Users\user\Source\Repos\Personel\DataAccess\obj\Debug\netstandard2.0\DataAccess.csprojAssemblyReference.cache
+C:\Users\user\Source\Repos\Personel\DataAccess\obj\Debug\netstandard2.0\DataAccess.AssemblyInfoInputs.cache
+C:\Users\user\Source\Repos\Personel\DataAccess\obj\Debug\netstandard2.0\DataAccess.AssemblyInfo.cs

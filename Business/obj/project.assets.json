@@ -185,11 +185,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\source\\repos\\Per01\\Business\\Business.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Source\\Repos\\Personel\\Business\\Business.csproj",
       "projectName": "Business",
-      "projectPath": "C:\\Users\\user\\source\\repos\\Per01\\Business\\Business.csproj",
+      "projectPath": "C:\\Users\\user\\Source\\Repos\\Personel\\Business\\Business.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\source\\repos\\Per01\\Business\\obj\\",
+      "outputPath": "C:\\Users\\user\\Source\\Repos\\Personel\\Business\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",

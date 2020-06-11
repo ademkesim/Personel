@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\source\\repos\\Per01\\DataAccess\\DataAccess.csproj": {}
+    "C:\\Users\\user\\Source\\Repos\\Personel\\DataAccess\\DataAccess.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\source\\repos\\Per01\\DataAccess\\DataAccess.csproj": {
+    "C:\\Users\\user\\Source\\Repos\\Personel\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\source\\repos\\Per01\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Source\\Repos\\Personel\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "C:\\Users\\user\\source\\repos\\Per01\\DataAccess\\DataAccess.csproj",
+        "projectPath": "C:\\Users\\user\\Source\\Repos\\Personel\\DataAccess\\DataAccess.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\source\\repos\\Per01\\DataAccess\\obj\\",
+        "outputPath": "C:\\Users\\user\\Source\\Repos\\Personel\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,10 @@
         "netstandard2.0": {
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[3.1.5, )"
             },

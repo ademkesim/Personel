@@ -185,11 +185,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\source\\repos\\Per01\\Core\\Core.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Source\\Repos\\Personel\\Core\\Core.csproj",
       "projectName": "Core",
-      "projectPath": "C:\\Users\\user\\source\\repos\\Per01\\Core\\Core.csproj",
+      "projectPath": "C:\\Users\\user\\Source\\Repos\\Personel\\Core\\Core.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\source\\repos\\Per01\\Core\\obj\\",
+      "outputPath": "C:\\Users\\user\\Source\\Repos\\Personel\\Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",

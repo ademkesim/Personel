@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\source\\repos\\Per01\\Per01API\\Per01API.csproj": {}
+    "C:\\Users\\user\\Source\\Repos\\Personel\\Per01API\\Per01API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\source\\repos\\Per01\\Per01API\\Per01API.csproj": {
+    "C:\\Users\\user\\Source\\Repos\\Personel\\Per01API\\Per01API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\source\\repos\\Per01\\Per01API\\Per01API.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Source\\Repos\\Personel\\Per01API\\Per01API.csproj",
         "projectName": "Per01API",
-        "projectPath": "C:\\Users\\user\\source\\repos\\Per01\\Per01API\\Per01API.csproj",
+        "projectPath": "C:\\Users\\user\\Source\\Repos\\Personel\\Per01API\\Per01API.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\source\\repos\\Per01\\Per01API\\obj\\",
+        "outputPath": "C:\\Users\\user\\Source\\Repos\\Personel\\Per01API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
