@@ -1,0 +1,7 @@
+C:\Users\user\Source\Repos\Personel\Business\obj\Debug\netstandard2.0\Business.csprojAssemblyReference.cache
+C:\Users\user\Source\Repos\Personel\Business\obj\Debug\netstandard2.0\Business.AssemblyInfoInputs.cache
+C:\Users\user\Source\Repos\Personel\Business\obj\Debug\netstandard2.0\Business.AssemblyInfo.cs
+C:\Users\user\Source\Repos\Personel\Business\obj\Debug\netstandard2.0\Business.csproj.CoreCompileInputs.cache
+C:\Users\user\Source\Repos\Personel\Business\bin\Debug\netstandard2.0\Core.dll
+C:\Users\user\Source\Repos\Personel\Business\bin\Debug\netstandard2.0\DataAccess.dll
+C:\Users\user\Source\Repos\Personel\Business\bin\Debug\netstandard2.0\Entities.dll

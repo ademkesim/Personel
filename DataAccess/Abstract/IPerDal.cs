@@ -1,10 +1,12 @@
-﻿using System;
+﻿using Core.DataAccess;
+using Entities.Concreate;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace DataAccess.Abstract
 {
-    public class IPerDal:IEntityRepository<Per>
+    public interface IPerDal : IEntityRepository<Per>
     {
     }
 }
