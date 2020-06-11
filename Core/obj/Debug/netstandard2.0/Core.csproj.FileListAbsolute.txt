@@ -1,0 +1,5 @@
+C:\Users\user\Source\Repos\Personel\Core\bin\Debug\netstandard2.0\Core.deps.json
+C:\Users\user\Source\Repos\Personel\Core\bin\Debug\netstandard2.0\Core.dll
+C:\Users\user\Source\Repos\Personel\Core\obj\Debug\netstandard2.0\Core.csprojAssemblyReference.cache
+C:\Users\user\Source\Repos\Personel\Core\obj\Debug\netstandard2.0\Core.AssemblyInfoInputs.cache
+C:\Users\user\Source\Repos\Personel\Core\obj\Debug\netstandard2.0\Core.AssemblyInfo.cs
