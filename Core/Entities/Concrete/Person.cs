@@ -10,7 +10,7 @@ namespace Core.Entities.Concrete
         public int PersonId { get; set; }
         public string firstname { get; set; }
         public string lastname { get; set; }
-        public string email { get; set; }
+        public string mail { get; set; }
         public byte[] PasswordHash { get; set; }
         public byte[] PasswordSalt { get; set; }
 

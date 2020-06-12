@@ -44,7 +44,7 @@ namespace Business.Concrete
 
         public Person GetByMail(string mail)
         {
-            return _personDal.Get(u => u.email == mail);
+            return _personDal.Get(u => u.mail == mail);
         }
 
         public Person GetById(int id)

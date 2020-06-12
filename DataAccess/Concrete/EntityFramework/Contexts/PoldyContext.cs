@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using Core.Entities.Concrete;
-using Entities.Concrete;
+using Entities.Concreate;
 using Microsoft.EntityFrameworkCore;
 namespace DataAccess.Concrete.EntityFramework.Contexts
 {
@@ -12,7 +12,7 @@ namespace DataAccess.Concrete.EntityFramework.Contexts
         {
             optionsBuilder.UseSqlServer(@"Server=DESKTOP-M6AH6CF;initial catalog=poldy;integrated security=true");
         }
-        public DbSet<Per> Pers { get; set; }
-        public DbSet<Person> Persons { get; set; }
+        public DbSet<Per> per01a { get; set; }
+        public DbSet<Person> Person { get; set; }
     }
 }

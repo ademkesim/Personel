@@ -6,10 +6,6 @@ namespace Business.Constans
 {
     public static class Messages
     {
-        //for Apply
-        public static string ApplyAdded = "Başvurunuz başarıyla alındı";
-        public static string ApplyUpdated = "Başvurunuz başarıyla  Güncellendi";
-        public static string ApplyDeleted = "Başvurunuz silindi";
 
         //for Curriculum vitae 
         public static string CurriculumVitaeAdded = "Cv'niz Kaydedildi";

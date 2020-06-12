@@ -19,9 +19,9 @@ namespace Business.DependencyResolvers.Autofac
             builder.RegisterType<PersonManager>().As<IPersonService>();
             builder.RegisterType<AuthManager>().As<IAuthService>();
             builder.RegisterType<JwtHelper>().As<ITokenHelper>();
-            builder.RegisterType<EfPersonDal>().As<IPersonDal>();
-            builder.RegisterType<PersonManager>().As<IPersonService>();
             builder.RegisterType<EfPerDal>().As<IPerDal>();
+            builder.RegisterType<PerManager>().As<IPerService>();
+            builder.RegisterType<EfPersonDal>().As<IPersonDal>();
 
         }
     }
