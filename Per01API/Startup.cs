@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -34,6 +35,11 @@ namespace Per01API
             {
                 options.AddPolicy("AllowOrigin", builder => builder.WithOrigins("http://localhost:44328"));
             });
+            //Swagger döküman tanýmýný yapýyoruz.
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo { Title = "WebApplication1", Version = "v1" });
+            });
             var tokenOption = Configuration.GetSection("TokenOptions").Get<TokenOptions>();
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
             {
@@ -52,11 +58,20 @@ namespace Per01API
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
             app.UseCors(builder => builder.WithOrigins("http://localhost:44328").AllowAnyHeader());
+            //swagger kullanýmý aktif ediliyor.
+            app.UseSwagger();
+
+            //swagger arayüz tanýmý yapýlýyor.
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Web Uygulamamýzýn Adý");
+            });
             app.UseHttpsRedirection();
             app.UseRouting();
             app.UseAuthorization();

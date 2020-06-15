@@ -8,9 +8,9 @@ namespace Business.Abstract
 {
     public interface IPerService
     {
-        IResult Add(Per per);
-        IResult Update(Per per);
-        IResult Delete(Per per);
-        IDataResult<List<Per>> GetList();
+        IResult Add(PerList per);
+        IResult Update(PerList per);
+        IResult Delete(PerList per);
+        IDataResult<List<PerList>> GetList();
     }
 }

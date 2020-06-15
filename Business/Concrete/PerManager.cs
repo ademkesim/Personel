@@ -6,6 +6,10 @@ using Entities.Concreate;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Microsoft.Data.SqlClient;
+using DataAccess.Concrete.EntityFramework.Contexts;
+using Microsoft.EntityFrameworkCore;
+using System.Linq;
 
 namespace Business.Concrete
 {
@@ -18,27 +22,30 @@ namespace Business.Concrete
             _perDal = perDal;
         }
 
-        public IResult Add(Per per)
+        public IResult Add(PerList per)
         {
             _perDal.Add(per);
             return new SuccessResult(Messages.PersonAdded);
         }
 
-        public IResult Update(Per per)
+        public IResult Update(PerList per)
         {
             _perDal.Update(per);
             return new SuccessResult(Messages.PersonUpdated);
         }
-        public IResult Delete(Per per)
+        public IResult Delete(PerList per)
         {
             _perDal.Delete(per);
             return new SuccessResult(Messages.PersonDeleted);
         }
 
-        public IDataResult<List<Per>> GetList()
+        public IDataResult<List<PerList>> GetList()
         {
-            return new SuccessDataResult<List<Per>>(_perDal.GetList());
+            using (var ctx = new PoldyContext())
+            {
+                var per01 = ctx.per01a.FromSqlRaw("Select * From v_perlist").ToList();
+                return new SuccessDataResult<List<PerList>>(per01);
+            }
         }
-
     }
 }

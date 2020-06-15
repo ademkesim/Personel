@@ -6,7 +6,7 @@ using System.Text;
 
 namespace DataAccess.Abstract
 {
-    public interface IPerDal : IEntityRepository<Per>
+    public interface IPerDal : IEntityRepository<PerList>
     {
     }
 }

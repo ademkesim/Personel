@@ -22,7 +22,7 @@ namespace Per01API.Controllers
 
 
         [HttpPost("add")]
-        public IActionResult Add(Per per)
+        public IActionResult Add(PerList per)
         {
             var result = _perService.Add(per);
             if (result.Success)
@@ -35,7 +35,7 @@ namespace Per01API.Controllers
         }
 
         [HttpPost("update")]
-        public IActionResult Update(Per per)
+        public IActionResult Update(PerList per)
         {
             var result = _perService.Update(per);
             if (result.Success)
@@ -47,7 +47,7 @@ namespace Per01API.Controllers
         }
 
         [HttpPost("delete")]
-        public IActionResult Delete(Per per)
+        public IActionResult Delete(PerList per)
         {
             var result = _perService.Delete(per);
             if (result.Success)
@@ -59,7 +59,7 @@ namespace Per01API.Controllers
         }
 
         [HttpGet("getlist")]
-        public IActionResult Getist()
+        public IActionResult GetList()
         {
             var result = _perService.GetList();
             if (result.Success)
