@@ -6,11 +6,8 @@ using System.Text;
 
 namespace Business.Abstract
 {
-    public interface IPerService
+    public interface IPerListService
     {
-        IResult Add(Per per);
-        IResult Update(Per per);
-        IResult Delete(Per per);
         IDataResult<List<PerList>> GetList();
     }
 }

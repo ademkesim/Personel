@@ -12,7 +12,8 @@ namespace DataAccess.Concrete.EntityFramework.Contexts
         {
             optionsBuilder.UseSqlServer(@"Server=DESKTOP-M6AH6CF;initial catalog=poldy;integrated security=true");
         }
-        public DbSet<PerList> per01a { get; set; }
+        public DbSet<Per> per01a { get; set; }
+        public DbSet<PerList> PerList { get; set; }
         public DbSet<Person> Person { get; set; }
     }
 }

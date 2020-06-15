@@ -21,6 +21,8 @@ namespace Business.DependencyResolvers.Autofac
             builder.RegisterType<JwtHelper>().As<ITokenHelper>();
             builder.RegisterType<EfPerDal>().As<IPerDal>();
             builder.RegisterType<PerManager>().As<IPerService>();
+            builder.RegisterType<EfPerListDal>().As<IPerListDal>();
+            builder.RegisterType<PerListManager>().As<IPerListService>();
             builder.RegisterType<EfPersonDal>().As<IPersonDal>();
 
         }

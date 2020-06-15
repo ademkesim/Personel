@@ -7,7 +7,7 @@ using System.Text;
 
 namespace Entities.Concreate
 {
-    public class PerList : IEntity
+    public class Per : IEntity
     {
         [Key]
         public string sicil { get; set; }

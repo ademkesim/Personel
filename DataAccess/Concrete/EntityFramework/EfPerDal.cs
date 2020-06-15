@@ -8,7 +8,7 @@ using System.Text;
 
 namespace DataAccess.Concrete.EntityFramework
 {
-    public class EfPerDal:EfEntityRepositoryBase<PerList, PoldyContext>, IPerDal
+    public class EfPerDal:EfEntityRepositoryBase<Per, PoldyContext>, IPerDal
     {
     }
 }

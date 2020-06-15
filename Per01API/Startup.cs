@@ -34,6 +34,7 @@ namespace Per01API
             services.AddCors(options =>
             {
                 options.AddPolicy("AllowOrigin", builder => builder.WithOrigins("http://localhost:44328"));
+                options.AddPolicy("AllowOrigin", builder => builder.WithOrigins("http://localhost:3000"));
             });
             //Swagger döküman tanýmýný yapýyoruz.
             services.AddSwaggerGen(c =>
@@ -64,6 +65,7 @@ namespace Per01API
                 app.UseDeveloperExceptionPage();
             }
             app.UseCors(builder => builder.WithOrigins("http://localhost:44328").AllowAnyHeader());
+            app.UseCors(builder => builder.WithOrigins("http://localhost:3000").AllowAnyHeader());
             //swagger kullanýmý aktif ediliyor.
             app.UseSwagger();
 

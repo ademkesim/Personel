@@ -22,18 +22,18 @@ namespace Business.Concrete
             _perDal = perDal;
         }
 
-        public IResult Add(PerList per)
+        public IResult Add(Per per)
         {
             _perDal.Add(per);
             return new SuccessResult(Messages.PersonAdded);
         }
 
-        public IResult Update(PerList per)
+        public IResult Update(Per per)
         {
             _perDal.Update(per);
             return new SuccessResult(Messages.PersonUpdated);
         }
-        public IResult Delete(PerList per)
+        public IResult Delete(Per per)
         {
             _perDal.Delete(per);
             return new SuccessResult(Messages.PersonDeleted);
@@ -43,7 +43,7 @@ namespace Business.Concrete
         {
             using (var ctx = new PoldyContext())
             {
-                var per01 = ctx.per01a.FromSqlRaw("Select * From v_perlist").ToList();
+                var per01 = ctx.PerList.FromSqlRaw("Select * From v_perlist").ToList();
                 return new SuccessDataResult<List<PerList>>(per01);
             }
         }

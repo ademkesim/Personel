@@ -7,11 +7,11 @@ using System.Text;
 
 namespace Entities.Concreate
 {
-    public class PerList : IEntity
+    public class PerList:IEntity
     {
         [Key]
         public string sicil { get; set; }
-        public string sirket { get; set; }//Primary key
+        public string  sirket { get; set; }//Primary key
         public string pay_no { get; set; }
         public string yis_akt { get; set; }
         public string ust_amir { get; set; }
@@ -23,7 +23,7 @@ namespace Entities.Concreate
         public string bolumadi { get; set; }
         public string deparadi { get; set; }
         public string gorevadi { get; set; }
-        public string statusadi { get; set; }
+        public string statuadi { get; set; }
         public string costadi { get; set; }
     }
 }

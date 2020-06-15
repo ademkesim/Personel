@@ -14,15 +14,17 @@ namespace Per01API.Controllers
     public class PerController : ControllerBase
     {
         private IPerService _perService;
-        public PerController(IPerService perService)
+        private IPerListService _perListService;
+
+        public PerController(IPerService perService, IPerListService perListService)
         {
             _perService = perService;
-
+            _perListService = perListService;
         }
 
 
         [HttpPost("add")]
-        public IActionResult Add(PerList per)
+        public IActionResult Add(Per per)
         {
             var result = _perService.Add(per);
             if (result.Success)
@@ -35,7 +37,7 @@ namespace Per01API.Controllers
         }
 
         [HttpPost("update")]
-        public IActionResult Update(PerList per)
+        public IActionResult Update(Per per)
         {
             var result = _perService.Update(per);
             if (result.Success)
@@ -47,7 +49,7 @@ namespace Per01API.Controllers
         }
 
         [HttpPost("delete")]
-        public IActionResult Delete(PerList per)
+        public IActionResult Delete(Per per)
         {
             var result = _perService.Delete(per);
             if (result.Success)
@@ -61,7 +63,7 @@ namespace Per01API.Controllers
         [HttpGet("getlist")]
         public IActionResult GetList()
         {
-            var result = _perService.GetList();
+            var result = _perListService.GetList();
             if (result.Success)
             {
                 return Ok(result.Data);

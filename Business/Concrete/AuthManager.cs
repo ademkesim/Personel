@@ -13,8 +13,8 @@ namespace Business.Concrete
 {
         public class AuthManager : IAuthService
         {
-            private IPersonService _personService;
-            private ITokenHelper _tokenHelper;
+            private readonly IPersonService _personService;
+            private readonly ITokenHelper _tokenHelper;
 
             public AuthManager(IPersonService personService, ITokenHelper tokenHelper)
             {
@@ -24,9 +24,8 @@ namespace Business.Concrete
 
             public IDataResult<Person> Register(UserForRegisterDto userForRegisterDto, string password)
             {
-                byte[] passwordHash, passwordSalt;
-                HashingHelper.CreatePasswordHash(password, out passwordHash, out passwordSalt);
-                var person = new Person
+            HashingHelper.CreatePasswordHash(password, out byte[] passwordHash, out byte[] passwordSalt);
+            var person = new Person
                 {
                     firstname = userForRegisterDto.FirstName,
                     lastname = userForRegisterDto.LastName,
