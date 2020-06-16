@@ -12,6 +12,7 @@ namespace Entities.Concreate
         [Key]
         public string sicil { get; set; }
         public string sirket { get; set; }//Primary key
+        public string pay_no { get; set; }
         public string adi { get; set; }
         public string soyadi { get; set; }
 
